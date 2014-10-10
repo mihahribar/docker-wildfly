@@ -47,4 +47,4 @@ EXPOSE 8080 9990
 USER wildfly
 
 # command to run at boot
-CMD ["/opt/wildfly/bin/standalone.sh", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0", "-Dmariadb.host=$MARIADB_PORT_3306_TCP_ADDR"]
+CMD ["/opt/wildfly/bin/standalone.sh", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0"]
