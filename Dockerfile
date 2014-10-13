@@ -1,22 +1,4 @@
-FROM ubuntu
-
-#
-# oracle jdk 7
-#
-
-# add java 7 repository
-RUN apt-get update
-RUN apt-get -y install software-properties-common
-RUN add-apt-repository -y ppa:webupd8team/java
-RUN apt-get update
-RUN apt-get -y upgrade
-
-# auto accept licence & install
-RUN echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections
-RUN apt-get -y install oracle-java7-installer
-RUN apt-get clean
-
-ENV JAVA_HOME /usr/lib/jvm/java-7-oracle
+FROM dockerfile/java:oracle-java7
 
 #
 # wildfly
