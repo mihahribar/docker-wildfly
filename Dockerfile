@@ -1,4 +1,5 @@
 FROM dockerfile/java:oracle-java7
+MAINTAINER Miha Hribar miha@hribar.info
 
 #
 # wildfly
