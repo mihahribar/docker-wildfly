@@ -1,11 +1,11 @@
-FROM dockerfile/java:oracle-java7
+FROM dockerfile/java:oracle-java8
 MAINTAINER Miha Hribar miha@hribar.info
 
 #
 # wildfly
 #
 
-ENV WILDFLY_VERSION 8.1.0.Final
+ENV WILDFLY_VERSION 9.0.2.Final
 
 # Create the wildfly user and group
 RUN \
