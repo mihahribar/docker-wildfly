@@ -1,4 +1,4 @@
-FROM java:oracle-java8
+FROM openjdk:8
 MAINTAINER Miha Hribar miha@hribar.info
 
 #
